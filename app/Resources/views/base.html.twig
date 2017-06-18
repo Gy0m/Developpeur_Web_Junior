@@ -1,47 +1,35 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8"/>
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block fonts %}
-            <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
-        {% endblock %}
-        {% block stylesheets %}
-            <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
-            <link rel="stylesheet" href="{{ asset('assets/css/mdb.min.css') }}">
-            <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-        {% endblock %}
-        {% block javascripts %}
-            <script src="{{ asset('assets/js/jquery-3.1.1.min.js') }}"></script>
-            <script src="{{ asset('assets/js/mdb.min.js') }}"></script>
-            <script src="{{ asset('assets/js/tether.min.js') }}"></script>
-            <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
-        {% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
-    </head>
-    <body>
-        <div class="container-fluid">
-            <div class="row">
-                {% block body %}
-                <header>
-                    {% block header %}
-                    {% block navbar %}
+<head>
+    <meta charset="UTF-8"/>
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block fonts %}
+        <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+    {% endblock %}
+    {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/css/mdb.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css') }}">
 
-                        {% endblockblock %}
-                    {% endblock %}
-                </header>
-                <section>
-                    {% block section %}
 
-                    {% endblock %}
-                </section>
-                <footer>
-                    {% block footer %}
+    {% endblock %}
+    {% block javascripts %}
+        <script src="{{ asset('assets/js/jquery-3.1.1.min.js') }}"></script>
+        <script src="{{ asset('assets/js/mdb.min.js') }}"></script>
+        <script src="{{ asset('assets/js/tether.min.js') }}"></script>
+        <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+        {#<script src="{{ asset('assets/js/jquery.scrollex.min.js') }}"></script>#}
+        {#<script src="{{ asset('assets/js/jquery.scrolly.min.js') }}"></script>#}
+        {#<script src="{{ asset('assets/js/skel.min.js') }}"></script>#}
+        {#<script src="{{ asset('assets/js/util.js') }}"></script>#}
 
-                    {% endblock %}
-                </footer>
-                {% endblock %}
-            </div>
-        </div>
-    </body>
+    {% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+</head>
+<body>
+{% block body %}
+                    {{ include('@Front/Default/index.html.twig') }}
+{% endblock %}
+</body>
 </html>
