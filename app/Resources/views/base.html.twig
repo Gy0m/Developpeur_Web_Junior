@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>{% block title %}Welcome!{% endblock %}</title>
+    <title>{% block title %}Développeur Web Junior{% endblock %}</title>
     {% block fonts %}
         <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
     {% endblock %}
@@ -19,17 +19,18 @@
         <script src="{{ asset('assets/js/mdb.min.js') }}"></script>
         <script src="{{ asset('assets/js/tether.min.js') }}"></script>
         <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
-        {#<script src="{{ asset('assets/js/jquery.scrollex.min.js') }}"></script>#}
-        {#<script src="{{ asset('assets/js/jquery.scrolly.min.js') }}"></script>#}
-        {#<script src="{{ asset('assets/js/skel.min.js') }}"></script>#}
-        {#<script src="{{ asset('assets/js/util.js') }}"></script>#}
+        <script src="{{ asset('assets/js/jquery.scrollex.min.js') }}"></script>
+        <script src="{{ asset('assets/js/jquery.scrolly.min.js') }}"></script>
+        <script src="{{ asset('assets/js/skel.min.js') }}"></script>
+        <script src="{{ asset('assets/js/util.js') }}"></script>
+        <script src="{{ asset('assets/js/main.js') }}"></script>
 
     {% endblock %}
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
 </head>
-<body>
+<body class="landing">
 {% block body %}
-                    {{ include('@Front/Default/index.html.twig') }}
+    {{ include('@Front/Default/index.html.twig') }}
 {% endblock %}
 </body>
 </html>
