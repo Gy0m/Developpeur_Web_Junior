@@ -2,151 +2,210 @@
 {% block stylesheets %}
     {{ parent() }}
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
+
 {% endblock %}
 {% block body %}
-    <!-- Page Wrapper -->
-    <div id="page-wrapper">
 
-        <!-- Header -->
-        <header id="header" class="alt">
-            <h1><a href="index.html">Développeur Web Junior</a></h1>
-            <nav id="nav">
-                <ul>
-                    <li class="special">
-                        <a href="#menu" class="menuToggle"><span>Menu</span></a>
-                        <div id="menu">
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="generic.html">Generic</a></li>
-                                <li><a href="elements.html">Elements</a></li>
-                                <li><a href="#">Sign Up</a></li>
-                                <li><a href="#">Log In</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-
-        <!-- Banner -->
-        <section id="banner">
-            <div class="inner">
-                <h2>Développeur Web Junior</h2>
-                {#<p>Another fine responsive<br />#}
-                    {#site template freebie<br />#}
-                    {#crafted by <a href="http://html5up.net">HTML5 UP</a>.</p>#}
-                {#<ul class="actions">#}
-                    {#<li><a href="#" class="button special">Activate</a></li>#}
-                {#</ul>#}
-            </div>
-            <a href="#one" class="more scrolly">En savoir plus</a>
-        </section>
-
-        <!-- One -->
-        <section id="one" class="wrapper style1 special">
-            <div class="inner">
-                <header class="major">
-                    <h2>Arcu aliquet vel lobortis ata nisl<br />
-                        eget augue amet aliquet nisl cep donec</h2>
-                    <p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-                        fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
-                </header>
-                <ul class="icons major">
-                    <li><span class="icon fa-diamond major style1"><span class="label">Lorem</span></span></li>
-                    <li><span class="icon fa-heart-o major style2"><span class="label">Ipsum</span></span></li>
-                    <li><span class="icon fa-code major style3"><span class="label">Dolor</span></span></li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Two -->
-        <section id="two" class="wrapper alt style2">
-            <section class="spotlight">
-                <div class="image"><img src="{{ asset('assets/img/ffss45.png') }}" alt="" /></div><div class="content">
-                    <h2>Fédération Française de Sauvetage Secourisme</h2>
-                    <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
-                </div>
-            </section>
-            <section class="spotlight">
-                <div class="image"><img src="{{ asset('assets/img/mtourisme.png') }}" alt="" /></div><div class="content">
-                    <h2>Tortor dolore feugiat<br />
-                        elementum magna</h2>
-                    <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
-                </div>
-            </section>
-            <section class="spotlight">
-                <div class="image"><img src="{{ asset('assets/img/wildshoes.png') }}" alt="" /></div><div class="content">
-                    <h2>Augue eleifend aliquet<br />
-                        sed condimentum</h2>
-                    <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
-                </div>
-            </section>
-        </section>
-
-        <!-- Three -->
-        <section id="three" class="wrapper style3 special">
-            <div class="inner">
-                <header class="major">
-                    <h2>Accumsan mus tortor nunc aliquet</h2>
-                    <p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-                        fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
-                </header>
-                <ul class="features">
-                    <li class="icon fa-paper-plane-o">
-                        <h3>Arcu accumsan</h3>
-                        <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-                    </li>
-                    <li class="icon fa-laptop">
-                        <h3>Ac Augue Eget</h3>
-                        <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-                    </li>
-                    <li class="icon fa-code">
-                        <h3>Mus Scelerisque</h3>
-                        <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-                    </li>
-                    <li class="icon fa-headphones">
-                        <h3>Mauris Imperdiet</h3>
-                        <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-                    </li>
-                    <li class="icon fa-heart-o">
-                        <h3>Aenean Primis</h3>
-                        <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-                    </li>
-                    <li class="icon fa-flag-o">
-                        <h3>Tortor Ut</h3>
-                        <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- CTA -->
-        <section id="cta" class="wrapper style4">
-            <div class="inner">
-                <header>
-                    <h2>Arcue ut vel commodo</h2>
-                    <p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
-                </header>
-                <ul class="actions vertical">
-                    <li><a href="#" class="button fit special">Activate</a></li>
-                    <li><a href="#" class="button fit">Learn More</a></li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer id="footer">
-            <ul class="icons">
-                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-                <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+    <!-- Header -->
+    <header id="header" class="alt">
+        <h1><a href="{{ path('index') }}">Développeur Web Junior</a></h1>
+        <nav id="nav">
+            <ul>
+                <li class="special">
+                    <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                    <div id="menu">
+                        <ul>
+                            <li><a href="{{ path('index') }}">Home</a></li>
+                            <li><a href="{{ path('generic') }}">Generic</a></li>
+                            <li><a href="{{ path('elements') }}">Elements</a></li>
+                            <li><a href="#">Sign Up</a></li>
+                            <li><a href="#">Log In</a></li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
-            <ul class="copyright">
-                <li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-            </ul>
-        </footer>
+        </nav>
+    </header>
 
-    </div>
+    <!-- Banner -->
+    <section id="banner">
+        <div class="inner">
+            <h2>Développeur Web Junior</h2>
+            {#<p>Another fine responsive<br />#}
+            {#site template freebie<br />#}
+            {#crafted by <a href="http://html5up.net">HTML5 UP</a>.</p>#}
+            {#<ul class="actions">#}
+            {#<li><a href="#" class="button special">Activate</a></li>#}
+            {#</ul>#}
+        </div>
+        <a href="#one" class="more scrolly">En savoir plus</a>
+    </section>
+
+    <!-- One -->
+    <section id="one" class="wrapper style1 special">
+        <div class="inner">
+            <header class="major">
+                <h2>Bienvenue sur le site d'un Développeur Web Junior</h2>
+            </header>
+            <ul class="icons major">
+                <li><span class="icon fa-diamond major style1"><span class="label">Lorem</span></span></li>
+                <li><span class="icon fa-heart-o major style2"><span class="label">Ipsum</span></span></li>
+                <li><span class="icon fa-code major style3"><span class="label">Dolor</span></span></li>
+            </ul>
+            <h3>Projets :</h3>
+        </div>
+
+    </section>
+
+    <!-- Two -->
+    <section id="two" class="wrapper alt style2">
+        <section class="spotlight">
+            <div class="image"><img src="{{ asset('assets/img/ncstox.png') }}" alt=""/></div>
+            <div class="content">
+                <h2>Natural Complex Substance Toxicity NCSTOX </h2>
+                <p>Création d'une base de donnée prédictive pour déterminer le profil toxicologique de molécules
+                    naturelles et extraits de plantes. Symfony, PHP, Postgresql, Bootstrap</p>
+            </div>
+        </section>
+        <section class="spotlight">
+            <div class="image"><img src="{{ asset('assets/img/ffss45.png') }}" alt=""/></div>
+            <div class="content">
+                <h2>Fédération Française de Sauvetage Secourisme</h2>
+                <p>Ajout de fonctionnalités de payement au site de la fédération française sauvetage secourisme du
+                    loiret, création d'un espace client sécurisé, système de notification par sms et emails,
+                    backoffice.</p>
+            </div>
+        </section>
+        <section class="spotlight">
+            <div class="image"><img src="{{ asset('assets/img/hagrickathon.jpeg') }}" alt=""/></div>
+            <div class="content">
+                <h2>Hagrickathon Open agrifood Orléans</h2>
+                <p>Hackathon organisé durant l'OpenAgrifood Orléans sur le thème de l'agriculture. Sujet : Stop Tabous,
+                    plateforme d'information et de mise en relation sur l'agroalimentaire. PHP/SYMFONY/BOOTSTRAP Mention
+                    du jury pour travail collaboratif </p>
+            </div>
+        </section>
+        <section class="spotlight">
+            <div class="image"><a href="http://www.mtourisme-ludique.fr/" target="_blank"><img
+                            src="{{ asset('assets/img/mtourisme.png') }}" alt=""/></a></div>
+            <div class="content">
+                <h2>mTourisme-Ludique</h2>
+                <p>Refonte du site mtourisme-ludique.fr, Bootstrap responsive, PHP, Symfony, Backoffice, Module de
+                    publication d'articles, formulaire de contact</p>
+            </div>
+        </section>
+        <section class="spotlight">
+            <div class="image"><a href="https://gy0m.github.io/WildShoes/" target="_blank"><img
+                            src="{{ asset('assets/img/wildshoes.png') }}" alt=""/></a></div>
+            <div class="content">
+                <h2>WildShoes</h2>
+                <p>Projet fictif de site vitrine d'un magasin de vente de chausse-pieds haut de gamme. Bootstrap
+                    responsive, Html5, Css3</p>
+            </div>
+        </section>
+    </section>
+
+    <!-- Three -->
+    <section id="three" class="wrapper style3 special">
+        <div class="inner">
+            <header class="major">
+                <h2>Formations</h2>
+            </header>
+            <ul class="features">
+                <li class="icon fa-graduation-cap">
+                    <h3>Développeur Web</h3>
+                    <p>Formation de Développeur Web bac+2 en 5 mois à la WildCodeSchool. Symfony PHP MySql Bootstrap Git
+                        Html5 Css3</p>
+                </li>
+                <li class="icon fa-graduation-cap">
+                    <h3>Responsable d'Exploitation</h3>
+                    <p>Formation de Technicien Supérieur en Méthodes et Exploitations Logistiques bac+2 à l'AFTRAL.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta" class="wrapper style4">
+        <div class="inner">
+            {#<header>#}
+            {#<h2>Arcue ut vel commodo</h2>#}
+            {#<p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>#}
+            {#</header>#}
+            {#<ul class="actions vertical">#}
+            {#<li><a href="#" class="button fit special">Activate</a></li>#}
+            {#<li><a href="#" class="button fit">Learn More</a></li>#}
+            {#</ul>#}
+
+            <!--Naked Form-->
+            <div class="card-block">
+
+                <!--Header-->
+                <div class="text-center">
+                    <h3><i class="fa fa-envelope"></i> Me Contacter :</h3>
+                    <hr class="mt-2 mb-2">
+                </div>
+
+                <!--Body-->
+                <form action="" method="post">
+                    <div class="md-form">
+                        <i class="fa fa-user prefix"></i>
+                        <input type="text" id="form3" class="form-control">
+                        <label for="form3">Votre Nom</label>
+                    </div>
+
+                    <div class="md-form">
+                        <i class="fa fa-envelope prefix"></i>
+                        <input type="text" id="form2" class="form-control">
+                        <label for="form2">Votre email</label>
+                    </div>
+
+                    <div class="md-form">
+                        <i class="fa fa-tag prefix"></i>
+                        <input type="text" id="form32" class="form-control">
+                        <label for="form34">Sujet</label>
+                    </div>
+
+                    <div class="md-form">
+                        <i class="fa fa-pencil prefix"></i>
+                        <textarea type="text" id="form8" class="md-textarea"></textarea>
+                        <label for="form8">Texte</label>
+                    </div>
+
+                    <div class="text-center">
+                        <button class="btn btn-default">Envoyer</button>
+
+                    </div>
+                </form>
+            </div>
+            <!--Naked Form-->
+
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <ul class="icons">
+            <li><a href="https://twitter.com/GyomToo" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="https://www.linkedin.com/in/guillaume-landreau-96520978/" target="_blank"
+                   class="icon fa-linkedin-square "><span class="label">GitHub</span></a></li>
+            <li><a href="https://github.com/Gy0m" target="_blank" class="icon fa-github"><span
+                            class="label">GitHub</span></a></li>
+            <li><a href="https://gitlab.com/Gy0m" target="_blank" class="icon fa-gitlab "><span
+                            class="label">GitLab</span></a></li>
+            <li><a href="https://codepen.io/Gy0m/#" target="_blank" class="icon fa-codepen "><span
+                            class="label">CodePen</span></a></li>
+            <li><a href="https://jsfiddle.net/user/Gy0m/fiddles/" target="_blank" class="icon fa-jsfiddle "><span
+                            class="label">JsFiddle</span></a></li>
+            <li><a href="https://stackoverflow.com/users/6843097/gy0m?tab=profile" target="_blank"
+                   class="icon fa-stack-overflow"><span class="label">GitHub</span></a></li>
+        </ul>
+        <ul class="copyright">
+            <li>&copy;opyright</li>
+            <li>Design: @Gy0m</li>
+        </ul>
+    </footer>
+
+
 {% endblock %}

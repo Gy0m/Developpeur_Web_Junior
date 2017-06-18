@@ -6023,7 +6023,7 @@ label {
     -ms-transition: color 0.2s;
     transition: color 0.2s; }
     .md-form .prefix.active {
-      color: #4285F4; }
+      color: #00FFCC; }
   .md-form .prefix ~ input,
   .md-form .prefix ~ textarea {
     margin-left: 3rem;

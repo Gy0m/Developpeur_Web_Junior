@@ -15,4 +15,19 @@ class DefaultController extends Controller
         return $this->render('FrontBundle:Default:index.html.twig');
     }
 
+    /**
+     * @Route("/generic", name="generic")
+     */
+    public function genericAction()
+    {
+        return $this->render('FrontBundle:Default:generic.html.twig');
+    }
+
+    /**
+     * @Route("/elements", name="elements")
+     */
+    public function elementsAction()
+    {
+        return $this->render('FrontBundle:Default:elements.html.twig');
+    }
 }

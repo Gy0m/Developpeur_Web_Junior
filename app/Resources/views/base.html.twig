@@ -29,8 +29,10 @@
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
 </head>
 <body class="landing">
-{% block body %}
-    {{ include('@Front/Default/index.html.twig') }}
-{% endblock %}
+<div id="page-wrapper">
+    {% block body %}
+            {{ include('@Front/Default/index.html.twig') }}
+    {% endblock %}
+</div>
 </body>
 </html>
