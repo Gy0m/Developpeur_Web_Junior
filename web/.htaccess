@@ -67,4 +67,4 @@ DirectoryIndex app.php
     </IfModule>
 </IfModule>
 
-RedirectMatch permanent ^/app\.php/(.*) /$1
+#RedirectMatch permanent ^/app\.php/(.*) /$1
