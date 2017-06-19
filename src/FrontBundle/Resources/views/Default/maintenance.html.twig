@@ -1,0 +1,61 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
+
+{% endblock %}
+{% block body %}
+
+    <section id="cta" class="wrapper style4">
+        <div class="inner">
+            {#<header>#}
+            {#<h2>Arcue ut vel commodo</h2>#}
+            {#<p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>#}
+            {#</header>#}
+            {#<ul class="actions vertical">#}
+            {#<li><a href="#" class="button fit special">Activate</a></li>#}
+            {#<li><a href="#" class="button fit">Learn More</a></li>#}
+            {#</ul>#}
+
+            <!--Naked Form-->
+            <div class="card-block">
+                <div class="space"></div>
+                <!--Header-->
+                <div class="text-center space2">
+                    <h3><i class="fa fa-cogs fa-5x"></i> Site En Maintenance</h3>
+                    <hr class="mt-2 mb-2">
+                </div>
+
+
+            <!--Naked Form-->
+
+
+        </div>
+    </section>
+
+    <footer id="footer" class="taille">
+        <ul class="icons">
+
+            <li><a href="https://twitter.com/GyomToo" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="https://www.linkedin.com/in/guillaume-landreau-96520978/" target="_blank"
+            class="icon fa-linkedin-square "><span class="label">GitHub</span></a></li>
+            <li><a href="https://github.com/Gy0m" target="_blank" class="icon fa-github"><span
+            class="label">GitHub</span></a></li>
+            <li><a href="https://gitlab.com/Gy0m" target="_blank" class="icon fa-gitlab "><span
+            class="label">GitLab</span></a></li>
+            <li><a href="https://codepen.io/Gy0m/#" target="_blank" class="icon fa-codepen "><span
+            class="label">CodePen</span></a></li>
+            <li><a href="https://jsfiddle.net/user/Gy0m/fiddles/" target="_blank" class="icon fa-jsfiddle "><span
+            class="label">JsFiddle</span></a></li>
+            <li><a href="https://stackoverflow.com/users/6843097/gy0m?tab=profile" target="_blank"
+            class="icon fa-stack-overflow"><span class="label">GitHub</span></a></li>
+        </ul>
+        <ul class="copyright">
+            <li>&copy;opyright</li>
+            <li>Design: @Gy0m</li>
+        </ul>
+    </footer>
+
+
+
+{% endblock %}

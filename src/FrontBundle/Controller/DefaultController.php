@@ -30,4 +30,12 @@ class DefaultController extends Controller
     {
         return $this->render('FrontBundle:Default:elements.html.twig');
     }
+
+    /**
+     * @Route("/maintenance", name="maintenance")
+     */
+    public function maintenanceAction()
+    {
+        return $this->render('FrontBundle:Default:maintenance.html.twig');
+    }
 }
