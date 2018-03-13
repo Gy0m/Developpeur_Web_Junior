@@ -3,3 +3,8 @@ front:
     type:     annotation
     prefix:   /
 
+easy_admin_bundle:
+    resource: "@EasyAdminBundle/Controller/AdminController.php"
+    type:     annotation
+    prefix:   /admin
+
